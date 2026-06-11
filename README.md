@@ -1,4 +1,4 @@
-# 🎬 Media Log Dashboard
+# Media Log Dashboard
 
 An interactive Streamlit dashboard that reads live from your Google Sheet and displays your media log data with charts, breakdowns, and analysis.
 
@@ -19,15 +19,15 @@ media_dashboard/
 
 ### 1. Make your Google Sheet public (view only)
 
-Your app needs to read the sheet without logging in. Don't worry — it's read-only, nobody can edit it.
+Your app needs to read the sheet without logging in. Don't worry - it's read-only, nobody can edit it.
 
 1. Open your Google Sheet
 2. Click the green **Share** button (top right)
-3. Under "General access", change **Restricted** → **Anyone with the link**
+3. Under "General access", change **Restricted** to **Anyone with the link**
 4. Make sure the role is set to **Viewer** (not Editor)
-5. Click **Copy link** and save it — you'll need this URL
+5. Click **Copy link** and save it - you'll need this URL
 
-> ⚠️ Make sure you copy the URL of the **Raw Data** tab specifically. To do this, click the Raw Data tab first, then copy the URL from your browser (it should end in `#gid=XXXXXXX`).
+> Make sure you copy the URL of the **Raw Data** tab specifically. To do this, click the Raw Data tab first, then copy the URL from your browser (it should end in `#gid=XXXXXXX`).
 
 ---
 
@@ -40,7 +40,7 @@ You already have a GitHub repo from your fragrance app. You can either:
 - Add `app.py` and `requirements.txt` inside it
 
 **Option B: Create a new repo (recommended)**
-- Go to github.com → New repository
+- Go to github.com - New repository
 - Name it `media-log-dashboard`
 - Upload `app.py` and `requirements.txt`
 
@@ -67,8 +67,8 @@ https://your-name-media-log-dashboard-app-XXXXX.streamlit.app
 
 To add a link from your Form sheet in Google Sheets:
 1. Pick an empty cell on your Form sheet (e.g. D2)
-2. Type: `=HYPERLINK("YOUR_STREAMLIT_URL", "📊 Open Dashboard")`
-3. The cell will become a clickable link — tap it on your phone to open the dashboard
+2. Type: `=HYPERLINK("YOUR_STREAMLIT_URL", "Open Dashboard")`
+3. The cell will become a clickable link - tap it on your phone to open the dashboard
 
 ---
 
@@ -77,7 +77,7 @@ To add a link from your Form sheet in Google Sheets:
 1. Open the app in your browser
 2. Paste your Google Sheet URL into the sidebar
 3. Use the filters to explore by year, month, quarter, or medium
-4. The data refreshes automatically every 5 minutes — or hit **Refresh data** to force it
+4. The data refreshes automatically every 5 minutes - or hit **Refresh data** to force it
 
 ---
 
@@ -86,10 +86,10 @@ To add a link from your Form sheet in Google Sheets:
 | Section | What it shows |
 |---|---|
 | At a glance | Total entries, films, books, rewatches, hyperfixations, avg rating |
-| Medium & Format | Entry counts by medium; stacked bar of medium × format |
+| Medium & Format | Entry counts by medium; stacked bar of medium x format |
 | Rewatch & Hyperfixation | Donut charts + rewatch rate by medium |
 | Who with & Format | Who you watched with; stacked bar with format breakdown |
-| Genre | Genre counts; genre × medium stacked bar |
+| Genre | Genre counts; genre x medium stacked bar |
 | Ratings | Distribution, avg by medium, avg by genre |
 | Best & Worst rated | Top 10 and bottom 10 tables |
 | Trends (full year only) | Monthly entries, cumulative line, avg rating trend, genre drift |
